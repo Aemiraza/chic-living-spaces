@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Chic Living Spaces</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation (Same as Home) -->
+    <header class="site-header fade-in">
+        <div class="container header-inner">
+            <div class="logo-slot">
+                <a href="Home.html"><img src="assets/images/logo.jpg" alt="Chic Living Spaces Logo" class="site-logo"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section contact-hero">
+        <div class="parallax-bg" style="background-image: url('assets/images/contact_hero.png');"></div>
+        <div class="hero-overlay" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7));"></div>
+        <div class="hero-content fade-in-up">
+            <h1>Let’s Connect.</h1>
+            <p>Have a design question, want to collaborate, or just saying hello? We’d love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Layout (Split Screen) -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-layout">
+                
+                <!-- Left Column (Contact Information) -->
+                <div class="contact-info-col fade-in-up delay-1">
+                    <h2>Get in Touch</h2>
+                    <div class="divider" style="margin: 0 0 2rem 0;"></div>
+                    
+                    <div class="info-item">
+                        <div class="icon-wrap-small">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:hello@chicliving.com">hello@chicliving.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-wrap-small">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday<br>9:00 AM - 5:00 PM EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-wrap-small">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div class="contact-socials">
+                            <h4>Follow Us</h4>
+                            <div class="social-links-row">
+                                <a href="#" class="social-icon-small"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-icon-small"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon-small"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Partnerships Box -->
+                    <div class="partnership-box mt-4">
+                        <h4>Partnerships & PR</h4>
+                        <p>Interested in collaborating? Reach out to us for brand partnerships and affiliate opportunities.</p>
+                    </div>
+                </div>
+                
+                <!-- Right Column (The Contact Form) -->
+                <div class="contact-form-col fade-in-up delay-2">
+                    <div class="form-card">
+                        <h3>Send a Message</h3>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you shortly.</p>
+                        
+                        <form class="contact-form block-form">
+                            <div class="form-row">
+                                <div class="form-group half-width">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group half-width">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <div class="custom-select">
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Design Question">Design Question</option>
+                                        <option value="Partnership">Partnership</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-secondary full-width-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- FAQ Teaser -->
+            <div class="faq-teaser fade-in-up delay-3">
+                <p>Looking for quick answers? Check out our <a href="#">FAQ page</a> or browse the <a href="blog.html">Blog</a>.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer (Same as Home) -->
+    <footer class="site-footer fade-in">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="logo-slot-footer">
+                    <a href="Home.html"><img src="assets/images/logo.jpg" alt="Chic Living Spaces Logo" class="site-logo-footer"></a>
+                </div>
+                <p>Curated ideas to transform your space into a stylish sanctuary.</p>
+            </div>
+            <div class="footer-links">
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="disclaimer.html">Affiliate Disclaimer</a>
+                </nav>
+            </div>
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chic Living Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Additional small script for Contact Form submission visual cue
+        document.addEventListener('DOMContentLoaded', () => {
+            const blockForm = document.querySelector('.block-form');
+            if (blockForm) {
+                blockForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const btn = blockForm.querySelector('button[type="submit"]');
+                    const originalText = btn.textContent;
+                    btn.textContent = 'Message Sent!';
+                    btn.style.backgroundColor = 'var(--color-primary)';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.style.backgroundColor = '';
+                        blockForm.reset();
+                    }, 4000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

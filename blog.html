@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Chic Living Spaces</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-surface">
+
+    <!-- Header & Navigation -->
+    <header class="site-header fade-in scrolled-fixed">
+        <div class="container header-inner">
+            <div class="logo-slot">
+                <a href="Home.html"><img src="assets/images/logo.jpg" alt="Chic Living Spaces Logo" class="site-logo"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Simple Page Header -->
+    <section class="page-header section-padding fade-in-up">
+        <div class="container text-center">
+            <h1>Chic Inspiration & Decor Tips</h1>
+            <p>Explore our latest articles on interior design, decor picks, and minimalist spaces.</p>
+        </div>
+    </section>
+
+    <!-- Category Filter Bar & Search -->
+    <div class="filter-bar border-top fade-in">
+        <div class="container filter-inner">
+            <nav class="category-links">
+                <a href="#" class="active" data-filter="all">All</a>
+                <a href="#" data-filter="living-room">Living Room</a>
+                <a href="#" data-filter="bedroom">Bedroom</a>
+                <a href="#" data-filter="decor-picks">Decor Picks</a>
+                <a href="#" data-filter="minimalist-spaces">Minimalist Spaces</a>
+                <a href="#" data-filter="trends">Trends</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search articles...">
+                <button><i class="fa-solid fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Editor's Choice -->
+    <section class="featured-posts section-padding bg-white">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Editor's Choice</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <!-- Featured Post 1 -->
+            <article class="featured-article-card mb-5 fade-in-up delay-1 blog-item" data-category="living-room">
+                <div class="featured-image-col">
+                    <div class="parallax-bg-inline" style="background-image: url('assets/images/post1_hero.png');"></div>
+                    <div class="card-overlay" style="background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0));"></div>
+                </div>
+                <div class="featured-content-col">
+                    <span class="category-badge featured-badge">Living Room</span>
+                    <h2><a href="post-7-designer-secrets.html">7 Designer Secrets to Make Your Living Room Look Incredibly Expensive</a></h2>
+                    <p class="excerpt">Want that million-dollar look without emptying your savings? Here are 7 interior designer secrets to effortlessly elevate your living room.</p>
+                    <a href="post-7-designer-secrets.html" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <!-- Featured Post 2 -->
+            <article class="featured-article-card reverse fade-in-up delay-2 blog-item" data-category="bedroom">
+                <div class="featured-image-col">
+                    <div class="parallax-bg-inline" style="background-image: url('assets/images/blog_feat_2.png');"></div>
+                    <div class="card-overlay" style="background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0));"></div>
+                </div>
+                <div class="featured-content-col">
+                    <span class="category-badge featured-badge">Bedroom</span>
+                    <h2><a href="#">The Ultimate Guide to Layering Textures in Your Bedroom</a></h2>
+                    <p class="excerpt">Transform your sleeping space into a luxurious sanctuary by masterfully combining plush linens, soft sage accents, and tactile nature-inspired elements.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Main Blog Grid -->
+    <section class="blog-feed section-padding">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Latest Articles</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="articles-grid grid-3">
+                <!-- Grid Post 1 -->
+                <article class="article-card fade-in-up delay-1 blog-item" data-category="trends">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_1.png" alt="Modular Sofa Styling" class="article-img">
+                        <span class="category-badge">Trends</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">Styling a Neutral Modular Sofa for Maximum Comfort</a></h3>
+                        <p class="excerpt">Learn how to arrange throw pillows and textured blankets to make your modern sofa the coziest spot in the house.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Post 2 -->
+                <article class="article-card fade-in-up delay-2 blog-item" data-category="decor-picks">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_2.png" alt="DIY Crafting Table" class="article-img">
+                        <span class="category-badge">Decor Picks</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">Creating an Elegant At-Home Making Station</a></h3>
+                        <p class="excerpt">Even your craft supplies can look chic. Shop our favorite aesthetic tools and dried floras for weekend projects.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Post 3 -->
+                <article class="article-card fade-in-up delay-3 blog-item" data-category="minimalist-spaces">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_3.png" alt="Minimalist Entryway" class="article-img">
+                        <span class="category-badge">Minimalist Spaces</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">First Impressions: The Magic of the Round Mirror</a></h3>
+                        <p class="excerpt">Why a simple console table and an oversized mirror are all you need to elevate a narrow entryway.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Post 4 -->
+                <article class="article-card fade-in-up delay-1 blog-item" data-category="minimalist-spaces">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_4.png" alt="Organized Closet" class="article-img">
+                        <span class="category-badge">Minimalist Spaces</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">The Art of the Open Concept Walk-In Closet</a></h3>
+                        <p class="excerpt">Keep your wardrobe looking like a high-end boutique with these precise folding and color-coordinating hacks.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Post 5 -->
+                <article class="article-card fade-in-up delay-2 blog-item" data-category="trends">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_5.png" alt="Terracotta Accent" class="article-img">
+                        <span class="category-badge">Trends</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">Why Terracotta is the New Neutral</a></h3>
+                        <p class="excerpt">Say goodbye to cold greys. Embrace the warmth and depth of earthy tones in your everyday decor choices.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Grid Post 6 -->
+                <article class="article-card fade-in-up delay-3 blog-item" data-category="bedroom">
+                    <div class="article-image-wrap">
+                        <img src="assets/images/blog_grid_6.png" alt="Chic Bedroom" class="article-img">
+                        <span class="category-badge">Bedroom</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="#">Sourcing the Perfect Mid-Century Nightstand</a></h3>
+                        <p class="excerpt">Our curated roundup of the best vintage-inspired bedside tables that won't break your designer budget.</p>
+                        <a href="#" class="read-more mt-auto">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>               
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination-wrap fade-in-up delay-4">
+                <button class="btn btn-primary load-more-btn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer fade-in">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="logo-slot-footer">
+                    <a href="Home.html"><img src="assets/images/logo.jpg" alt="Chic Living Spaces Logo" class="site-logo-footer"></a>
+                </div>
+                <p>Curated ideas to transform your space into a stylish sanctuary.</p>
+            </div>
+            <div class="footer-links">
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="disclaimer.html">Affiliate Disclaimer</a>
+                </nav>
+            </div>
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Chic Living Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Additional script for inline parallax on featured images
+        document.addEventListener('DOMContentLoaded', () => {
+            const inlineParallax = document.querySelectorAll('.parallax-bg-inline');
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                inlineParallax.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    // Basic check if element is in viewport
+                    if(rect.top < window.innerHeight && rect.bottom > 0) {
+                        el.style.transform = `translateY(${(rect.top - window.innerHeight) * 0.15}px)`;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
